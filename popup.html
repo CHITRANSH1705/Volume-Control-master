@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VOLCTL</title>
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="crt"></div>
+
+  <header class="titlebar">
+    <div class="brand">
+      <span class="brand-mark">VOLCTL</span><span class="cursor">_</span>
+    </div>
+    <div class="brand-sub">// per-tab audio gain control</div>
+  </header>
+
+  <div class="toolbar">
+    <label class="toggle">
+      <input type="checkbox" id="show-all">
+      <span>show all tabs</span>
+    </label>
+    <button id="refresh-btn" class="icon-btn" title="Refresh list">↻</button>
+  </div>
+
+  <div id="status-line" class="status-line">// scanning for audio_</div>
+
+  <div id="tabs-list" class="tabs-list"></div>
+
+  <footer class="footer">
+    <button id="mute-all-btn" class="footer-btn">MUTE ALL</button>
+    <button id="reset-all-btn" class="footer-btn">RESET ALL</button>
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>
