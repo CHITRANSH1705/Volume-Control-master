@@ -8,6 +8,7 @@
   if (window.__volctlActive) return; // already initialized in this frame
   window.__volctlActive = true;
 
+  
   const STATE = {
     volume: 1,       // 1.0 == 100%. Range enforced by popup: 0 - 3 (0-300%)
     muted: false,
